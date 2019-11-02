@@ -1,0 +1,15 @@
+.\output\kbi.o: ..\Source\drivers\kbi\kbi.c
+.\output\kbi.o: ..\Source\common\common.h
+.\output\kbi.o: ..\Source\cpu\arm_cm0.h
+.\output\kbi.o: ..\Source\platforms\kea128_config.h
+.\output\kbi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\kbi.o: ..\Source\cpu\headers\SKEAZ1284.h
+.\output\kbi.o: ..\Source\cpu\core_cm0plus.h
+.\output\kbi.o: ..\Source\cpu\core_cmInstr.h
+.\output\kbi.o: ..\Source\cpu\core_cmFunc.h
+.\output\kbi.o: ..\Source\cpu\system_SKEAZ1284.h
+.\output\kbi.o: ..\Source\common\assert.h
+.\output\kbi.o: ..\Source\common\io.h
+.\output\kbi.o: ..\Source\common\startup.h
+.\output\kbi.o: ..\Source\common\stdlib.h
+.\output\kbi.o: ..\Source\drivers\kbi\kbi.h

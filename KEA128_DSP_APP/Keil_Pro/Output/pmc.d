@@ -1,0 +1,15 @@
+.\output\pmc.o: ..\Source\drivers\PMC\pmc.c
+.\output\pmc.o: ..\Source\common\common.h
+.\output\pmc.o: ..\Source\cpu\arm_cm0.h
+.\output\pmc.o: ..\Source\platforms\kea128_config.h
+.\output\pmc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\pmc.o: ..\Source\cpu\headers\SKEAZ1284.h
+.\output\pmc.o: ..\Source\cpu\core_cm0plus.h
+.\output\pmc.o: ..\Source\cpu\core_cmInstr.h
+.\output\pmc.o: ..\Source\cpu\core_cmFunc.h
+.\output\pmc.o: ..\Source\cpu\system_SKEAZ1284.h
+.\output\pmc.o: ..\Source\common\assert.h
+.\output\pmc.o: ..\Source\common\io.h
+.\output\pmc.o: ..\Source\common\startup.h
+.\output\pmc.o: ..\Source\common\stdlib.h
+.\output\pmc.o: ..\Source\drivers\PMC\pmc.h

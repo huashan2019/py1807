@@ -1,0 +1,15 @@
+.\output\ics.o: ..\Source\drivers\ics\ics.c
+.\output\ics.o: ..\Source\common\common.h
+.\output\ics.o: ..\Source\cpu\arm_cm0.h
+.\output\ics.o: ..\Source\platforms\kea128_config.h
+.\output\ics.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\ics.o: ..\Source\cpu\headers\SKEAZ1284.h
+.\output\ics.o: ..\Source\cpu\core_cm0plus.h
+.\output\ics.o: ..\Source\cpu\core_cmInstr.h
+.\output\ics.o: ..\Source\cpu\core_cmFunc.h
+.\output\ics.o: ..\Source\cpu\system_SKEAZ1284.h
+.\output\ics.o: ..\Source\common\assert.h
+.\output\ics.o: ..\Source\common\io.h
+.\output\ics.o: ..\Source\common\startup.h
+.\output\ics.o: ..\Source\common\stdlib.h
+.\output\ics.o: ..\Source\drivers\ics\ics.h

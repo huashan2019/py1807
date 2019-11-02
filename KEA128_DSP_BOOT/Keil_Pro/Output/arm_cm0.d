@@ -1,0 +1,14 @@
+.\output\arm_cm0.o: ..\Source\cpu\arm_cm0.c
+.\output\arm_cm0.o: ..\Source\common\common.h
+.\output\arm_cm0.o: ..\Source\cpu\arm_cm0.h
+.\output\arm_cm0.o: ..\Source\platforms\kea128_config.h
+.\output\arm_cm0.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\arm_cm0.o: ..\Source\cpu\headers\SKEAZ1284.h
+.\output\arm_cm0.o: ..\Source\cpu\core_cm0plus.h
+.\output\arm_cm0.o: ..\Source\cpu\core_cmInstr.h
+.\output\arm_cm0.o: ..\Source\cpu\core_cmFunc.h
+.\output\arm_cm0.o: ..\Source\cpu\system_SKEAZ1284.h
+.\output\arm_cm0.o: ..\Source\common\assert.h
+.\output\arm_cm0.o: ..\Source\common\io.h
+.\output\arm_cm0.o: ..\Source\common\startup.h
+.\output\arm_cm0.o: ..\Source\common\stdlib.h

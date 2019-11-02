@@ -1,0 +1,15 @@
+.\output\pit.o: ..\Source\drivers\pit\pit.c
+.\output\pit.o: ..\Source\common\common.h
+.\output\pit.o: ..\Source\cpu\arm_cm0.h
+.\output\pit.o: ..\Source\platforms\kea128_config.h
+.\output\pit.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\pit.o: ..\Source\cpu\headers\SKEAZ1284.h
+.\output\pit.o: ..\Source\cpu\core_cm0plus.h
+.\output\pit.o: ..\Source\cpu\core_cmInstr.h
+.\output\pit.o: ..\Source\cpu\core_cmFunc.h
+.\output\pit.o: ..\Source\cpu\system_SKEAZ1284.h
+.\output\pit.o: ..\Source\common\assert.h
+.\output\pit.o: ..\Source\common\io.h
+.\output\pit.o: ..\Source\common\startup.h
+.\output\pit.o: ..\Source\common\stdlib.h
+.\output\pit.o: ..\Source\drivers\pit\pit.h
