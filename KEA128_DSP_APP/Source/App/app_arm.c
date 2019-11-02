@@ -197,6 +197,7 @@ void ArmDataAnalyse(void)
 		case A2M_IAP_CMD:///===========================================================================================A2M_IAP_CMD 0x08================
 			if(ArmRx_SubID==0x01)
 			{
+				TurnOff_REM_EN;
 				Set_Uart_Choose(UART_CHOOSE_PC1);
 				Set_IAP_Mode;
 			}

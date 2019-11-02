@@ -72,6 +72,7 @@ void Dsp_Info_Data(SCH_U8 Channel,SCH_U8 *Cnt)
 		if(Data_dbe[Channel-1] > Data_dbe_MaxMin[Channel-1][2])
 		{
 			if(SysPower.nPowerState==POWER_NORMAL_RUN 
+				&& !SysPower.Power_First_Timer
 				&& (Get_ACC_Has && Get_ACC_Flag || !Get_ACC_Has && Get_AUDIO_Flag))
 			{
 				if(++*Cnt >= 10)

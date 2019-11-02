@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Output\KEA128.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Output\KEA128.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Fri Nov 01 14:10:11 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Sat Nov 02 16:30:06 2019
 <BR><P>
 <H3>Maximum Stack Usage =        624 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -790,7 +790,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Pro
 </UL>
 
-<P><STRONG><a name="[7c]"></a>ArmDataAnalyse</STRONG> (Thumb, 610 bytes, Stack size 88 bytes, app_arm.o(i.ArmDataAnalyse))
+<P><STRONG><a name="[7c]"></a>ArmDataAnalyse</STRONG> (Thumb, 616 bytes, Stack size 88 bytes, app_arm.o(i.ArmDataAnalyse))
 <BR><BR>[Stack]<UL><LI>Max Depth = 392<LI>Call Chain = ArmDataAnalyse &rArr; Dsp_Mute &rArr; Dsp_Mute_A &rArr; Dsp_VolUpdate &rArr; Dsp_Single_A &rArr; pow &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Queue_In
@@ -799,6 +799,7 @@ Global Symbols
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sch_memcpy
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMin
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMessage
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinClear
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Uart_Choose
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Arm_ACK
@@ -985,7 +986,7 @@ Global Symbols
 <LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysLowPowerExit
 </UL>
 
-<P><STRONG><a name="[94]"></a>BtDataAnalyse</STRONG> (Thumb, 1632 bytes, Stack size 32 bytes, app_bt.o(i.BtDataAnalyse))
+<P><STRONG><a name="[94]"></a>BtDataAnalyse</STRONG> (Thumb, 1638 bytes, Stack size 32 bytes, app_bt.o(i.BtDataAnalyse))
 <BR><BR>[Stack]<UL><LI>Max Depth = 592<LI>Call Chain = BtDataAnalyse &rArr; Dsp_Unite &rArr; Dsp_GEN_Filter &rArr; Dsp_Mute_A &rArr; Dsp_VolUpdate &rArr; Dsp_Single_A &rArr; pow &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartTxData
@@ -1012,6 +1013,7 @@ Global Symbols
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_ON
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_OFF
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMessage
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinClear
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BT_DataRxPro
@@ -1026,7 +1028,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BtDataAnalyse
 </UL>
 
-<P><STRONG><a name="[93]"></a>Change_Uart</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, app_connect.o(i.Change_Uart))
+<P><STRONG><a name="[93]"></a>Change_Uart</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, app_connect.o(i.Change_Uart))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = Change_Uart &rArr; Set_Uart_Choose &rArr; Flash_Quick_WR &rArr; Flash_Write &rArr; FLASH_Program1LongWord
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ExchangeTwoVariable_U8
@@ -1045,8 +1047,8 @@ Global Symbols
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BtDataAnalyse
 </UL>
 
-<P><STRONG><a name="[c2]"></a>Check_Uart</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, app_connect.o(i.Check_Uart))
-<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = Check_Uart &rArr; Get_Uart_Choose &rArr; Flash_Quick_RD
+<P><STRONG><a name="[c2]"></a>Check_Uart</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, app_connect.o(i.Check_Uart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = Check_Uart &rArr; Get_Uart_Choose &rArr; Flash_Quick_RD
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Uart_Choose
 </UL>
@@ -1079,11 +1081,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
 </UL>
 
-<P><STRONG><a name="[c8]"></a>DSP_IO_Init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, app_dsp_driver.o(i.DSP_IO_Init))
+<P><STRONG><a name="[c8]"></a>DSP_IO_Init</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, app_dsp_driver.o(i.DSP_IO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = DSP_IO_Init &rArr; GPIO_PinInit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinInit
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinSet
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinClear
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOInit
 </UL>
@@ -1189,7 +1192,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DspDataInit
 </UL>
 
-<P><STRONG><a name="[da]"></a>Dsp_EQ_Left_Req</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, app_dsp_eq.o(i.Dsp_EQ_Left_Req))
+<P><STRONG><a name="[da]"></a>Dsp_EQ_Left_Req</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, app_dsp_eq.o(i.Dsp_EQ_Left_Req))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Dsp_EQ_Left_Req &rArr; PostMessage &rArr; Queue_In
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMessage
@@ -1205,7 +1208,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BtDataAnalyse
 </UL>
 
-<P><STRONG><a name="[db]"></a>Dsp_EQ_Right_Req</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, app_dsp_eq.o(i.Dsp_EQ_Right_Req))
+<P><STRONG><a name="[db]"></a>Dsp_EQ_Right_Req</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, app_dsp_eq.o(i.Dsp_EQ_Right_Req))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Dsp_EQ_Right_Req &rArr; PostMessage &rArr; Queue_In
 </UL>
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMessage
@@ -1287,7 +1290,7 @@ Global Symbols
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BtDataAnalyse
 </UL>
 
-<P><STRONG><a name="[eb]"></a>Dsp_Info_Data</STRONG> (Thumb, 366 bytes, Stack size 40 bytes, app_dsp_readback.o(i.Dsp_Info_Data))
+<P><STRONG><a name="[eb]"></a>Dsp_Info_Data</STRONG> (Thumb, 374 bytes, Stack size 40 bytes, app_dsp_readback.o(i.Dsp_Info_Data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 328<LI>Call Chain = Dsp_Info_Data &rArr; Dsp_Mute_A &rArr; Dsp_VolUpdate &rArr; Dsp_Single_A &rArr; pow &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinSet
@@ -2006,6 +2009,8 @@ Global Symbols
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIGMA_WRITE_DELAY
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_Info_Det
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_Updata
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BtDataAnalyse
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DSP_IO_Init
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYS_Power_Ctl
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemPowerUp
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnterPowerOff
@@ -2014,6 +2019,7 @@ Global Symbols
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Ctl
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Debug_CMD
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AD1938_WriteData
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ArmDataAnalyse
 <LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eprom_WR_Order
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eprom_WR_Data
 <LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eprom_WR_Command
@@ -2441,7 +2447,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysLowPowerInit
 </UL>
 
-<P><STRONG><a name="[146]"></a>SCH_Task_Execute</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, task.o(i.SCH_Task_Execute))
+<P><STRONG><a name="[146]"></a>SCH_Task_Execute</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, task.o(i.SCH_Task_Execute))
 <BR><BR>[Stack]<UL><LI>Max Depth = 624<LI>Call Chain = SCH_Task_Execute &rArr; Task_8ms_Pro &rArr; TASK_Dsp_Pro &rArr; Dsp_StoreLoadPro &rArr; Dsp_Flash_TO_File &rArr; Dsp_Load &rArr; Dsp_Updata &rArr; Dsp_GEN_Filter &rArr; Dsp_Mute_A &rArr; Dsp_VolUpdate &rArr; Dsp_Single_A &rArr; pow &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TASK_Voltage_Det
@@ -2644,7 +2650,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Bsp_ADC_Init
 </UL>
 
-<P><STRONG><a name="[155]"></a>SysDataInit</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, system.o(i.SysDataInit))
+<P><STRONG><a name="[155]"></a>SysDataInit</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, system.o(i.SysDataInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysDataInit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sch_memset
@@ -2702,7 +2708,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[15b]"></a>SysSoftware_Init</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, main.o(i.SysSoftware_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = SysSoftware_Init &rArr; DspInit &rArr; DspDataInit &rArr; Dsp_Filter_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = SysSoftware_Init &rArr; Check_Uart &rArr; Get_Uart_Choose &rArr; Flash_Quick_RD
 </UL>
 <BR>[Calls]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysDataInit
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DspInit
@@ -2865,7 +2871,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_8ms_Pro
 </UL>
 
-<P><STRONG><a name="[16a]"></a>TASK_Bt_Pro</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, app_bt.o(i.TASK_Bt_Pro))
+<P><STRONG><a name="[16a]"></a>TASK_Bt_Pro</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, app_bt.o(i.TASK_Bt_Pro))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = TASK_Bt_Pro &rArr; M2B_TxService &rArr; UartTxData &rArr; Uart_Tx_DataPro &rArr; UartGetFromBuf &rArr; Queue_Out
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartTxData

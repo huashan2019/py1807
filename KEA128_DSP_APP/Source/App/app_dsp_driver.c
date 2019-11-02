@@ -23,6 +23,7 @@ void DSP_IO_Init(void)
 	GPIO_PinInit(GPIO_REM_EN_CTL,    GPIO_PinOutput);
 	GPIO_PinInit(SPI_DSP_SS,         GPIO_PinOutput);
 	DSP_SS_HIGH();
+	TurnOff_REM_EN;
 }
 /********************************************************************************
 **  Function	: SIGMA_READ SIGMA_WRITE

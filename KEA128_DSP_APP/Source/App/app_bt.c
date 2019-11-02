@@ -514,6 +514,7 @@ void BtDataAnalyse(void)
 		case A2M_IAP_CMD:///===========================================================================================A2M_IAP_CMD 0x08================
 			if(BtRx_SubID==0x01)
 			{
+				TurnOff_REM_EN;
 				Set_IAP_Mode;
 			}
 			break;

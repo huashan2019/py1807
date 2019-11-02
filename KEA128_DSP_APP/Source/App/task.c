@@ -83,6 +83,7 @@ void SCH_Task_Execute (void)
 	if(F_100ms_Val)
 	{
 		F_100ms_Clr;
+		if(SysPower.Power_First_Timer)	SysPower.Power_First_Timer--;
 		Task_100ms_Pro();
 	}
 }

@@ -50,6 +50,7 @@ typedef struct
 	POWEROFFREASON bk_PowerOffReason;
 	POWEROFFREASON PowerOffReason;
 	SCH_U16 Power_Timer;
+	SCH_U16 Power_First_Timer;
 	SCH_U16 nWaitArmHandShake;
 }Sys_Power_T;
 extern Sys_Power_T SysPower;

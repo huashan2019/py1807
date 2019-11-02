@@ -25,7 +25,8 @@ void SysDataInit(void)
 	Set_SYS_MUTE;
 	Set_VolErr_Flag;
 	Set_ACC_Flag;
-	///Set_ACC_Has;
+	Set_ACC_Has;
+	SysPower.Power_First_Timer = 5000/100;
 }
 
 

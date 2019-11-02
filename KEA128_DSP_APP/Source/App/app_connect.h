@@ -17,7 +17,7 @@ extern Rx_MODUEL_S      PcRxModuel_1;
 #define UART_CHOOSE_PC1                 0xAA55AA55
 #define SCH_Uart_BT   SCH_Uart0  ///---  BT
 #define SCH_Uart_PC   SCH_Uart2  ///SCH_Uart1  ///---  PC   
-#define SCH_Uart_PC1  SCH_Uart2  ///SCH_Uart2  ///---  PC  
+#define SCH_Uart_PC1  SCH_Uart1  ///SCH_Uart2  ///---  PC  
 extern Uart_T Uart_CONNECT;
 extern Uart_T Uart_OTHER;
 extern Uart_T Uart_OTHER1;
