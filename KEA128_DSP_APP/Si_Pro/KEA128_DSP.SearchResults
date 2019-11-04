@@ -1,4 +1,13 @@
----- DSP_IO_Init Matches (3 in 3 files) ----
-App_dsp_driver.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):void DSP_IO_Init(void)
-App_dsp_driver.h (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):extern void DSP_IO_Init(void);
-Mw_gpio.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):	DSP_IO_Init();
+---- Get_VolErr_Flag Matches (12 in 4 files) ----
+App_power.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):				if(Get_START_Flag&&!Get_VolErr_Flag)
+App_power.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):					if(Get_VolErr_Flag)
+App_power.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):				else if(Get_START_Flag&&!Get_VolErr_Flag)
+App_power.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):				else if(!Get_START_Flag&&!Get_VolErr_Flag)
+App_start.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):	if(Get_START_Flag==ON && !Get_VolErr_Flag)
+App_start.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):	if(Get_START_Flag==OFF && !Get_VolErr_Flag)
+App_voltage.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):		if(VolDet.VoltageState!=LOW_ERROR||Get_VolErr_Flag==NORMAL)
+App_voltage.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):			Get_VolErr_Flag=ERROR;
+App_voltage.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):			Get_VolErr_Flag=NORMAL;
+App_voltage.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):		if(VolDet.VoltageState!=HIGHT_ERROR||Get_VolErr_Flag==NORMAL)
+App_voltage.c (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):			Get_VolErr_Flag=ERROR;
+System.h (e:\project\dsp\kea128_dsd\kea128_dsp_app\source\app):#define Get_VolErr_Flag          Sys.Status.Flag.VolErrFlag

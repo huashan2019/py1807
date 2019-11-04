@@ -198,7 +198,7 @@ void ArmDataAnalyse(void)
 			if(ArmRx_SubID==0x01)
 			{
 				TurnOff_REM_EN;
-				Set_Uart_Choose(UART_CHOOSE_PC1);
+				Change_Uart(Uart_ARM);
 				Set_IAP_Mode;
 			}
 			break;

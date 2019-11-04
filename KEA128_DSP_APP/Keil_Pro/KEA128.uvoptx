@@ -118,7 +118,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>p?</Name>
+          <Name>荔*</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -138,7 +138,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>JL2CM3</Key>
-          <Name>-U59406225 -O78 -S2 -ZTIFSpeedSel5000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -TO18 -TC10000000 -TP21 -TDS8001 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD1FFFF000 -FC800 -FN1 -FF0MKE04Zxxx_P128KB.FLM -FS04000 -FL01C000 -FP0($$Device:SKEAZ128xxx4$Flash\MKE04Zxxx_P128KB.FLM)</Name>
+          <Name>-U59408297 -O78 -S4 -ZTIFSpeedSel2000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(0BC11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8001 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD1FFFF000 -FC800 -FN1 -FF0MKE04Zxxx_P128KB.FLM -FS04000 -FL01C000 -FP0($$Device:SKEAZ128xxx4$Flash\MKE04Zxxx_P128KB.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -150,18 +150,18 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>80</LineNumber>
+          <LineNumber>36</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>28808</Address>
+          <Address>48352</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\project\DSP\KEA128_DSD\KEA128_DSP_APP\Source\App\app_dsp_readback.c</Filename>
+          <Filename>..\Source\App\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\KEA128\../Source/App/app_dsp_readback.c\80</Expression>
+          <Expression>\\KEA128\../Source/App/main.c\36</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>

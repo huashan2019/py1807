@@ -34,7 +34,7 @@ void Check_Uart(void)
 	}
 	else if(Get_Uart_Choose(UART_CHOOSE_PC1))
 	{
-		Uart_CONNECT = SCH_Uart_PC1;
+		Uart_CONNECT = SCH_Uart_PC;
 		Uart_OTHER   = SCH_Uart_BT;
 		Uart_OTHER1  = SCH_Uart_PC;
 	}
