@@ -19,7 +19,7 @@
 #define AUDIO_START         ENABLE
 
 ///°æ±¾ºÅ
-#define MCU_VERSION         "DSD.0.191102.0"
+#define MCU_VERSION         "DSD.0.191111.0"
 
 
 

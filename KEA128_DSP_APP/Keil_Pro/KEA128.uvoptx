@@ -118,7 +118,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>荔*</Name>
+          <Name>愲 </Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -150,18 +150,34 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>36</LineNumber>
+          <LineNumber>76</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>48352</Address>
+          <Address>21898</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\Source\App\main.c</Filename>
+          <Filename>..\Source\App\app_start.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\KEA128\../Source/App/main.c\36</Expression>
+          <Expression>\\KEA128\../Source/App/app_start.c\76</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>80</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>21916</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\Source\App\app_start.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\KEA128\../Source/App/app_start.c\80</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -188,7 +204,7 @@
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Uart1_TX_buf</ItemText>
+          <ItemText>Uart0_RX_buf</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
@@ -369,6 +385,21 @@
           <count>40</count>
           <WinNumber>1</WinNumber>
           <ItemText>App_Amp</ItemText>
+        </Ww>
+        <Ww>
+          <count>41</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Uart_ARM</ItemText>
+        </Ww>
+        <Ww>
+          <count>42</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Uart_CONNECT</ItemText>
+        </Ww>
+        <Ww>
+          <count>43</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Uart_OTHER</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -1158,7 +1189,7 @@
 
   <Group>
     <GroupName>SCH</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

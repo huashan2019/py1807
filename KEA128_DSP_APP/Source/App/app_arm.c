@@ -55,6 +55,8 @@ void Arm_ACK(SCH_U8 ack_type)
 	buf[5]=GetCheckData_Xor(buf, 5);
 	UartTxData(Uart_ARM, buf, 6);
 }
+
+
 ///==========================================================================================ArmDataAnalyse====================
 void ArmDataAnalyse(void)
 {
@@ -197,8 +199,8 @@ void ArmDataAnalyse(void)
 		case A2M_IAP_CMD:///===========================================================================================A2M_IAP_CMD 0x08================
 			if(ArmRx_SubID==0x01)
 			{
-				TurnOff_REM_EN;
-				Change_Uart(Uart_ARM);
+				TurnOff_REM_EN;					
+				Set_Uart_Choose(UART_CHOOSE_PC1);
 				Set_IAP_Mode;
 			}
 			break;
