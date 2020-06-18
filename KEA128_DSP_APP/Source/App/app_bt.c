@@ -379,7 +379,8 @@ void BtDataAnalyse(void)
 					}
 					break;
 				case 0x8D:///«Î«Û“Ù¡øÃı
-					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x0D));
+					//PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x0D));
+					PostMessage(ARM_MODULE,M2A_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
 					break;
 				case 0x0E:
 					if(pData[0]==0x01)///DSP OFF
@@ -490,19 +491,30 @@ void BtDataAnalyse(void)
 					{
 						TansData.B2A_81Num[0] = pData[1];
 						TansData.B2A_81Num[1] = pData[2];
+						TansData.B2A_81Num[2] = pData[3];
 					}
 					else if(pData[0]==0x82)
 					{
 						TansData.B2A_PlayTime[0] = pData[1];
 						TansData.B2A_PlayTime[1] = pData[2];
 					}
+					else if(pData[0]==0x09)
+					{
+						TansData.B2A_PlayFoldNext = pData[1];
+					}
 					break;
+				case 0x06:
+				case 0x87:
+					TansData.B2A_PlayFold = pData[1];
+					break;
+					
 				case 0x0B:
 				case 0x8B:
 					TansData.B2A_NeedStartNum[0] = pData[0];
 					TansData.B2A_NeedStartNum[1] = pData[1];
-					TansData.B2A_NeedEndNum[0] = pData[2];
-					TansData.B2A_NeedEndNum[1] = pData[3];
+					TansData.B2A_NeedStartNum[2] = pData[2];
+					TansData.B2A_NeedEndNum[0] = pData[3];
+					TansData.B2A_NeedEndNum[1] = pData[4];
 					break;
 				default:break;
 			}
@@ -560,6 +572,11 @@ void M2B_TxService(void)
 				case 0x00:
 					pData[length_data++] = index;
 					pData[length_data++] = App_Dsp.DspNum;
+					
+					//if(index == 0xff) 
+					//	pData[length_data++] = 0;
+					//else
+					//	pData[length_data++] = App_Dsp.DspNum;
 					break;
 				case 0x01:///DSP◊¥Ã¨
 					pData[length_data++] = (App_Dsp.DspPwrState == DSP_NORMAL) ? 1 : 0;
@@ -747,6 +764,7 @@ void M2B_TxService(void)
 				case 0x87:
 					pData[length_data++] = TansData.A2B_TotalNum[0];
 					pData[length_data++] = TansData.A2B_TotalNum[1];
+					pData[length_data++] = TansData.A2B_TotalNum[2];
 					break;
 				case 0x08:
 					sch_memcpy(pData,&TansData.A2B_ID3_Song[1],TansData.A2B_ID3_Song[0]);

@@ -174,6 +174,7 @@ void Dsp_StoreLoadPro(void)
 			{
 				Flash_WR_State_Clear();
 				App_Dsp.DSP_Updata_State = UpData_Idle;
+				if(App_Dsp.DspNum > 8)
 				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFF,0x00));///ERROR
 			}
 			if(Dsp_Store(App_Dsp.DspUpdataNum))
@@ -189,6 +190,7 @@ void Dsp_StoreLoadPro(void)
 			{
 				Flash_RD_State_Clear();
 				App_Dsp.DSP_Updata_State = UpData_Idle;
+				if(App_Dsp.DspNum > 8)
 				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFF,0x00));///ERROR
 				Dsp_Data_Reset();
 			}

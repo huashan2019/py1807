@@ -3,7 +3,7 @@
 .\output\mw_flash.o: ..\Source\common\common.h
 .\output\mw_flash.o: ..\Source\cpu\arm_cm0.h
 .\output\mw_flash.o: ..\Source\platforms\kea128_config.h
-.\output\mw_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\mw_flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\mw_flash.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\mw_flash.o: ..\Source\cpu\core_cm0plus.h
 .\output\mw_flash.o: ..\Source\cpu\core_cmInstr.h
@@ -36,13 +36,13 @@
 .\output\mw_flash.o: ..\Source\Sch\sch_common.h
 .\output\mw_flash.o: ..\Source\Sch\sch_message.h
 .\output\mw_flash.o: ..\Source\Sch\sch_printf.h
-.\output\mw_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\mw_flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\output\mw_flash.o: ..\Source\App\bsp.h
 .\output\mw_flash.o: ..\Source\App\system.h
 .\output\mw_flash.o: ..\Source\App\task.h
 .\output\mw_flash.o: ..\Source\App\uicc_def.h
 .\output\mw_flash.o: ..\Source\App\app_debug.h
-.\output\mw_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\mw_flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\output\mw_flash.o: ..\Source\App\mw_gpio.h
 .\output\mw_flash.o: ..\Source\App\mw_i2c.h
 .\output\mw_flash.o: ..\Source\App\mw_adc.h

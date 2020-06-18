@@ -2,7 +2,7 @@
 .\output\wdog.o: ..\Source\common\common.h
 .\output\wdog.o: ..\Source\cpu\arm_cm0.h
 .\output\wdog.o: ..\Source\platforms\kea128_config.h
-.\output\wdog.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\wdog.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\wdog.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\wdog.o: ..\Source\cpu\core_cm0plus.h
 .\output\wdog.o: ..\Source\cpu\core_cmInstr.h

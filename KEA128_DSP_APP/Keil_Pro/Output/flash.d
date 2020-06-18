@@ -3,7 +3,7 @@
 .\output\flash.o: ..\Source\common\common.h
 .\output\flash.o: ..\Source\cpu\arm_cm0.h
 .\output\flash.o: ..\Source\platforms\kea128_config.h
-.\output\flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\flash.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\flash.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\flash.o: ..\Source\cpu\core_cm0plus.h
 .\output\flash.o: ..\Source\cpu\core_cmInstr.h

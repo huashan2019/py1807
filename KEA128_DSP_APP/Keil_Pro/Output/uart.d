@@ -3,7 +3,7 @@
 .\output\uart.o: ..\Source\common\common.h
 .\output\uart.o: ..\Source\cpu\arm_cm0.h
 .\output\uart.o: ..\Source\platforms\kea128_config.h
-.\output\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\uart.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\uart.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\uart.o: ..\Source\cpu\core_cm0plus.h
 .\output\uart.o: ..\Source\cpu\core_cmInstr.h

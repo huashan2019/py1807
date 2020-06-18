@@ -2,7 +2,7 @@
 .\output\sysinit.o: ..\Source\common\common.h
 .\output\sysinit.o: ..\Source\cpu\arm_cm0.h
 .\output\sysinit.o: ..\Source\platforms\kea128_config.h
-.\output\sysinit.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\sysinit.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\sysinit.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\sysinit.o: ..\Source\cpu\core_cm0plus.h
 .\output\sysinit.o: ..\Source\cpu\core_cmInstr.h

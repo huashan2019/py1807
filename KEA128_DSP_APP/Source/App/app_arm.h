@@ -16,7 +16,7 @@ typedef enum
 	A2M_SYS_CMD=0x01,
 	A2M_IAP_CMD=0x08,
 	A2M_SPDIF_INFO = 0x0C,
-	A2M_USB_VOL_INFO = 0x0A,
+	A2M_DSP_DATA = 0x0A,
 	A2M_DSP_DATA_STORE = 0x0E,
 	A2M_BT_IAP_CMD = 0x0F,
 	A2M_WHEEL_CTL = 0xF0,///蓝牙方控按键
@@ -28,6 +28,7 @@ typedef enum
 {
 	M2A_SYS_CMD=0x01,
 	M2A_IAP_CMD=0x08,
+	M2A_DSP_DATA=0x0A,
 	M2A_SPDIF_INFO = 0x0C,
 	M2A_DSP_DATA_STORE = 0x0E,
     M2A_END=0xFF
@@ -68,14 +69,16 @@ typedef enum
 typedef struct 
 {
 	SCH_U8 ARM_Ver[32];        ///ARM版本号
+	SCH_U8 B2A_PlayFoldNext;     ///上一个播放目录编号
+	SCH_U8 B2A_PlayFold;     ///当前播放目录编号
 	SCH_U8 B2A_PlayNum[2];     ///当前播放歌曲编号
-	SCH_U8 B2A_81Num[2];       ///播放时间 0x81
+	SCH_U8 B2A_81Num[3];       ///播放时间 0x81
 	SCH_U8 B2A_PlayTime[2];    ///播放时间 0x82
 	SCH_U8 B2A_SongCnt[2];     ///总歌曲数
-	SCH_U8 B2A_NeedStartNum[2];///请求目录名起始编号
+	SCH_U8 B2A_NeedStartNum[3];///操作ID +请求目录名起始编号
 	SCH_U8 B2A_NeedEndNum[2];  ///请求目录名终止编号
 	SCH_U8 A2B_PlayNum[2];     ///当前目录当前播放编号
-	SCH_U8 A2B_TotalNum[2];    ///当前目录编号总数
+	SCH_U8 A2B_TotalNum[3];    ///操作ID +当前目录编号总数
 	SCH_U8 A2B_PlayPause_S;    ///播放暂停状态
 	SCH_U8 A2B_Cycle_S;        ///循环状态
 	SCH_U8 A2B_Curr_T[2];      ///当前时间

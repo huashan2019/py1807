@@ -89,11 +89,21 @@ void ArmDataAnalyse(void)
 				PostMessage(BT_MODULE,A2M_SYS_CMD,SCH_WORD(0x00,M2A_ARM_VER));
 			}
 			break;	
-		case A2M_USB_VOL_INFO:
+		case M2B_DSP_DATA:
 			if(ArmRx_SubID == 0x0d)
 			{
-				App_Dsp.Dsp_USB_Vol = pData[1] ;/*USB main vol 0~40*/
-				App_Dsp.Dsp_USB_MAX_Vol = pData[2] ;
+
+				if(pData[0] == 0x01)
+				{
+					VolData = pData[1];
+					//pData[length_data++] = DSP_VOL_MAX;
+				}
+				else if(pData[0] == 0x02)
+				{
+					App_Dsp.Dsp_USB_Vol = pData[1] ;/*USB main vol 0~40*/
+					App_Dsp.Dsp_USB_MAX_Vol = pData[2] ;
+				}
+				
 				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x0D));
 			}
 			break;
@@ -155,6 +165,7 @@ void ArmDataAnalyse(void)
 				case 0x87:
 					TansData.A2B_TotalNum[0] = pData[0];
 					TansData.A2B_TotalNum[1] = pData[1];
+					TansData.A2B_TotalNum[2] = pData[2];
 					PostMessage(BT_MODULE,A2M_SPDIF_INFO,SCH_WORD(0x00,ArmRx_SubID));
 					break;
 				case 0x08:
@@ -283,6 +294,15 @@ void M2A_TxService(void)
 				default:break;
 			}
 			break;
+		case M2A_DSP_DATA:
+			switch(sub_id)
+			{
+				case 0x8d:
+					pData[length_data++] = index;
+					break;
+			}			
+			break;
+			
 		case M2A_SPDIF_INFO:
 			switch(sub_id)
 			{
@@ -297,11 +317,17 @@ void M2A_TxService(void)
 					{
 						pData[length_data++] = TansData.B2A_81Num[0];
 						pData[length_data++] = TansData.B2A_81Num[1];
+						pData[length_data++] = TansData.B2A_81Num[2];
 					}
 					else if(index == 0x82)
 					{
 						pData[length_data++] = TansData.B2A_PlayTime[0];
 						pData[length_data++] = TansData.B2A_PlayTime[1];
+					}
+					else if(index == 0x09)
+					{
+						pData[length_data++] = TansData.B2A_PlayFoldNext;
+
 					}
 					break;
 				case 0x02:
@@ -309,8 +335,14 @@ void M2A_TxService(void)
 				case 0x04:
 				case 0x05:
 				case 0x06:
+					pData[length_data++] = 0x00;
+					pData[length_data++] = TansData.B2A_PlayFold;
+					break;
 				case 0x07:
 				case 0x87:
+					pData[length_data++] = 0x00;
+					pData[length_data++] = TansData.B2A_PlayFold;
+					break;
 				case 0x08:
 				case 0x09:
 				case 0x0A:
@@ -325,6 +357,7 @@ void M2A_TxService(void)
 				case 0x8B:
 					pData[length_data++] = TansData.B2A_NeedStartNum[0];
 					pData[length_data++] = TansData.B2A_NeedStartNum[1];
+					pData[length_data++] = TansData.B2A_NeedStartNum[2];
 					pData[length_data++] = TansData.B2A_NeedEndNum[0];
 					pData[length_data++] = TansData.B2A_NeedEndNum[1];
 					break;

@@ -3,7 +3,7 @@
 .\output\task.o: ..\Source\common\common.h
 .\output\task.o: ..\Source\cpu\arm_cm0.h
 .\output\task.o: ..\Source\platforms\kea128_config.h
-.\output\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\task.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\task.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\task.o: ..\Source\cpu\core_cm0plus.h
 .\output\task.o: ..\Source\cpu\core_cmInstr.h
@@ -36,13 +36,13 @@
 .\output\task.o: ..\Source\Sch\sch_common.h
 .\output\task.o: ..\Source\Sch\sch_message.h
 .\output\task.o: ..\Source\Sch\sch_printf.h
-.\output\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\task.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\output\task.o: ..\Source\App\bsp.h
 .\output\task.o: ..\Source\App\system.h
 .\output\task.o: ..\Source\App\task.h
 .\output\task.o: ..\Source\App\uicc_def.h
 .\output\task.o: ..\Source\App\app_debug.h
-.\output\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\task.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\output\task.o: ..\Source\App\mw_gpio.h
 .\output\task.o: ..\Source\App\mw_i2c.h
 .\output\task.o: ..\Source\App\mw_adc.h

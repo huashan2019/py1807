@@ -3,7 +3,7 @@
 .\output\sch_queue.o: ..\Source\common\common.h
 .\output\sch_queue.o: ..\Source\cpu\arm_cm0.h
 .\output\sch_queue.o: ..\Source\platforms\kea128_config.h
-.\output\sch_queue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\sch_queue.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\sch_queue.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\sch_queue.o: ..\Source\cpu\core_cm0plus.h
 .\output\sch_queue.o: ..\Source\cpu\core_cmInstr.h
@@ -18,4 +18,4 @@
 .\output\sch_queue.o: ..\Source\Sch\sch_common.h
 .\output\sch_queue.o: ..\Source\Sch\sch_message.h
 .\output\sch_queue.o: ..\Source\Sch\sch_printf.h
-.\output\sch_queue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\sch_queue.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
